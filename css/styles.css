@@ -40,12 +40,12 @@ label {
   display: block;
 }
 .container {
-  width: 1158px;
+  max-width: 428px;
   margin: 0 auto;
   padding: 0 15px;
 }
 .section {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .visually-hidden {
   position: absolute;
@@ -85,9 +85,9 @@ label {
   text-decoration: none;
   color: var(--color1);
 }
-.logo-link {
+/* .logo-link {
   margin-right: 76px;
-}
+} */
 .link {
   text-decoration: none;
 }
@@ -148,7 +148,7 @@ label {
   border-radius: 2px;
   width: 100%;
   height: 4px;
-  content: "";
+  content: " ";
   display: block;
   position: absolute;
   bottom: -1px;
@@ -165,16 +165,15 @@ label {
   background-position: center;
   background-size: cover;
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0 auto; 
 }
 .title-text {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--color5);
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 .title-btn {
   width: 169px;
@@ -199,32 +198,37 @@ label {
   background-color: var(--color4);
 }
 .title-container {
-  max-width: 496px;
-  padding: 188px 0;
+  max-width: 320px;
+  padding: 112px 0;
   text-align: center;
 }
 /* ----------Sector 2 index.html--------- */
 .plan-list-section {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
   justify-content: center;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
 }
-.plan-list {
-  flex-basis: 264px;
+.plan-list{
+  max-width: 396px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 .plan-item {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
   letter-spacing: 0.02em;
+  text-transform: capitalize;
   color: var(--color2);
-}
-.plan-item {
   margin-bottom: 8px;
-  margin-top: 8px;
 }
 .plan-text {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -233,7 +237,7 @@ label {
   width: 264px;
   height: 112px;
   background-color: var(--color6);
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
@@ -263,6 +267,7 @@ label {
 
 .servises-section {
   padding-top: 0;
+  display: none;
 }
 /* ----------Sector 4 index.html--------- */
 .team {
@@ -288,9 +293,10 @@ label {
 }
 .team-list-section {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 24px;
+  padding: 0;
+  gap: 72px;
 }
 .team-title {
   font-weight: 500;
@@ -354,7 +360,8 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px 16px;
 }
 .custumers-icon {
   width: 104px;
@@ -365,7 +372,7 @@ label {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .custumers-link {
-  width: 168px;
+  width: 190px;
   height: 88px;
   display: flex;
   justify-content: center;
@@ -497,18 +504,19 @@ label {
 /* ---------Footer--------- */
 .footer {
   background-color: var(--color2);
-  padding: 100px 0;
+  padding: 96px 0;
 }
-.footer-div {
+.footer-div{
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color7);
-}
-.footer-text {
   max-width: 264px;
   margin-top: 16px;
 }
@@ -516,7 +524,7 @@ label {
   color: var(--color6);
 }
 .footer-soc-div {
-  margin-left: 120px;
+  margin: 72px 0;
 }
 .footer-soc-text {
   font-weight: 500;
@@ -554,11 +562,7 @@ label {
 .footer-soc-link:focus {
   background-color: #31d0aa;
 }
-.footer-email-div {
-  margin-left: 80px;
-}
 .footer-form {
-  display: flex;
   margin-top: 16px;
 }
 .footer-sub-text {
@@ -573,9 +577,10 @@ label {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
-  width: 264px;
+  width: 398px;
   height: 40px;
   padding: 8px 0 8px 16px;
+  margin-bottom: 16px;
 }
 .footer-sub-btn {
   display: flex;
@@ -590,7 +595,7 @@ label {
   border: transparent;
   width: 165px;
   height: 40px;
-  margin-left: 24px;
+  margin: 0 auto;
 }
 /*-----------Modal-window----------*/
 .backdrop {
@@ -604,7 +609,7 @@ label {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
-  width: 408px;
+  width: 392px;
   min-height: 584px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -777,4 +782,113 @@ label {
 .modal-send-btn:hover,
 .modal-send-btn:focus {
   background-color: var(--color4);
+}
+
+@media screen and (min-width: 768px){
+  .container {
+    max-width: 768px;
+  }
+  .title-text{
+  font-size: 56px;
+  line-height: 60px;
+  margin-bottom: 36px;
+  }
+  .title-container{
+  max-width: 496px;
+  }
+  .plan-list-section{
+    flex-direction: row;
+    gap:72px 24px;
+  }
+  .plan-list{
+    max-width: 356px;
+    justify-content: start;
+  }
+  .team-list-section{
+    flex-direction: row;
+    gap: 64px 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .custumers-list {
+    gap: 72px 24px;
+  }
+  .custumers-link {
+    width: 168px;
+  }
+  .footer-div{
+    align-items: flex-start;
+  }
+  .footer-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-left: 93px;
+}
+.footer-logo-div{
+margin-bottom: 72px;
+}
+  .footer-soc-div {
+margin:0 0 0 24px;
+}
+.footer-form{
+  display: flex;
+}
+.footer-email-div{
+display: flex;
+justify-content: start;
+}
+.footer-email {
+width: 264px;
+margin: 0 24px 0 0;
+}
+}
+@media screen and (min-width: 1158px){
+  .container{
+    max-width: 1158px;
+  }
+  .section {
+  padding: 120px 0;
+}
+  .title-text{
+    margin-bottom: 48px;
+    }
+  .title-container{
+    max-width: 496px;
+    padding: 188px 0;
+    }
+    .plan-item{
+    font-weight: 500;
+font-size: 20px;
+line-height: 1.20;
+}
+.plan-text {
+font-weight: 400;
+}
+  .plan-div {
+    display: flex;
+  }
+    .plan-list {
+    flex-basis: 256px;
+  }
+  .servises-section{
+    display: flex;
+    padding-top: 0;
+  }
+  .footer{
+    padding: 100px 0;
+  }
+  .footer-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+}
+.footer-logo-div{
+margin: 0 120px 0 0;
+}
+.footer-soc-div {
+margin: 0 80px 0 0;
+}
 }
