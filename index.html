@@ -15,44 +15,53 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
-        <nav class="nav-list link">
+        <div class="menu-div">
           <a href="./index.html" class="logo-link link"
             >Web<span class="logo-span-header">Studio</span></a
           >
-          <ul class="header-list list">
-            <li class="header-title">
-              <a href="./index.html" class="header-title-item link studio"
-                >Studio</a
-              >
-            </li>
-            <li class="header-title">
-              <a href="./portfolio.html" class="header-title-item link"
-                >Portfolio</a
-              >
-            </li>
-            <li class="header-title">
-              <a href="" class="header-title-item link">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="contact-list-title">
-          <ul class="contact-list list">
-            <li class="contact-item-list">
-              <a href="mailto:info@devstudio.com" class="contact-item link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="contact-item-list">
-              <a href="tel:+110001111111" class="contact-item link"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+          <button type="button" class="menu-btn" data-menu-open>
+            <svg width="32" height="22" class="menu-icon">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="nav-container">
+          <nav class="nav-list link">
+            <ul class="header-list list">
+              <li class="header-title">
+                <a href="./index.html" class="header-title-item link studio"
+                  >Studio</a
+                >
+              </li>
+              <li class="header-title">
+                <a href="./portfolio.html" class="header-title-item link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="header-title">
+                <a href="" class="header-title-item link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="contact-list-title">
+            <ul class="contact-list list">
+              <li class="contact-item-list">
+                <a href="mailto:info@devstudio.com" class="contact-item link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contact-item-list">
+                <a href="tel:+110001111111" class="contact-item link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <section class="title">
         <div class="container title-container">
@@ -123,7 +132,11 @@
           <ul class="servises-list list">
             <li class="servises-list-item">
               <img
-                src="./images/img_1.jpg"
+                srcset="
+                  ./images/servises1-1x-min.jpg 1x,
+                  ./images/servises1-2x-min.jpg 2x
+                "
+                src="./images/servises1-1x-min.jpg"
                 alt="Computer monitor"
                 width="360"
                 height="300"
@@ -131,7 +144,11 @@
             </li>
             <li class="servises-list-item">
               <img
-                src="./images/img_2.jpg"
+                srcset="
+                  ./images/servises2-1x-min.jpg 1x,
+                  ./images/servises2-2x-min.jpg 2x
+                "
+                src="./images/servises2-1x-min.jpg"
                 alt="Smartphone screen"
                 width="360"
                 height="300"
@@ -139,7 +156,11 @@
             </li>
             <li class="servises-list-item">
               <img
-                src="./images/img_3.jpg"
+                srcset="
+                  ./images/servises3-1x-min.jpg 1x,
+                  ./images/servises3-2x-min.jpg 2x
+                "
+                src="./images/servises3-1x-min.jpg"
                 alt="Smartphone in hand"
                 width="360"
                 height="300"
@@ -154,7 +175,11 @@
           <ul class="team-list-section list">
             <li class="team-list">
               <img
-                src="./images/img_4.jpg"
+                srcset="
+                  ./images/Mark-1x-min.jpg 1x,
+                  ./images/Mark-2x-min.jpg 2x
+                "
+                src="./images/Mark-1x-min.jpg"
                 alt="Mark's photo"
                 width="264"
                 height="260"
@@ -196,7 +221,8 @@
             </li>
             <li class="team-list">
               <img
-                src="./images/img_5.jpg"
+                srcset="./images/Tom-1x-min.jpg 1x, ./images/Tom-2x-min.jpg 2x"
+                src="./images/Tom-1x-min.jpg"
                 alt="Tom's photo"
                 width="264"
                 height="260"
@@ -238,7 +264,11 @@
             </li>
             <li class="team-list">
               <img
-                src="./images/img_6.jpg"
+                srcset="
+                  ./images/Camila-1x-min.jpg 1x,
+                  ./images/Camila-2x-min.jpg 2x
+                "
+                src="./images/Camila-1x-min.jpg"
                 alt="Сamila's photo"
                 width="264"
                 height="260"
@@ -280,7 +310,11 @@
             </li>
             <li class="team-list">
               <img
-                src="./images/img_7.jpg"
+                srcset="
+                  ./images/Daniel-1x-min.jpg 1x,
+                  ./images/Daniel-2x-min.jpg 2x
+                "
+                src="./images/Daniel-1x-min.jpg"
                 alt="Daniel's photo"
                 width="264"
                 height="260"
@@ -375,9 +409,10 @@
     </main>
     <footer class="footer">
       <div class="container footer-container">
-        <div class="footer-div footer-logo-div" >
+        <div class="footer-div footer-logo-div">
           <a href="./index.html" class="logo-link link footer-logo-link"
-            >Web<span class="logo-span-footer">Studio</span></a>
+            >Web<span class="logo-span-footer">Studio</span></a
+          >
           <p class="footer-text">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
@@ -515,6 +550,78 @@
         <button type="submit" class="modal-send-btn">Send</button>
       </div>
     </div>
+    <!-- ----------Menu window--------- -->
+    <div class="backdrop-menu is-hidden" data-menu>
+      <button type="button" data-menu-close class="menu-close-btn">
+        <svg width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="menu-nav-list link">
+        <ul class="menu-list list">
+          <li class="menu-title">
+            <a href="./index.html" class="menu-title-item link studio-menu"
+              >Studio</a
+            >
+          </li>
+          <li class="menu-title">
+            <a href="./portfolio.html" class="menu-title-item link"
+              >Portfolio</a
+            >
+          </li>
+          <li class="menu-title">
+            <a href="" class="menu-title-item link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="menu-contact-title">
+        <ul class="menu-contact-list list">
+          <li class="menu-contact-item-list">
+            <a href="tel:+110001111111" class="menu-num-item link"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="menu-contact-item-list">
+            <a href="mailto:info@devstudio.com" class="menu-mail-item link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <div class="menu-soc-div">
+          <ul class="menu-soc-list list">
+            <li class="menu-soc-item">
+              <a class="menu-soc-link link" href="">
+                <svg width="24" height="24" class="menu-soc-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-soc-item">
+              <a class="menu-soc-link link" href="">
+                <svg width="24" height="24" class="menu-soc-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-soc-item">
+              <a class="menu-soc-link link" href="">
+                <svg width="24" height="24" class="menu-soc-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-soc-item">
+              <a class="menu-soc-link link" href="">
+                <svg width="24" height="24" class="menu-soc-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </address>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
