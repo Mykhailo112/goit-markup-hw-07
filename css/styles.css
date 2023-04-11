@@ -108,10 +108,6 @@ label {
   position: absolute;
   bottom: -1px;
 }
-.studio,
-.portfolio {
-  color: var(--color4);
-}
 .menu-div {
   display: flex;
   justify-content: space-between;
@@ -191,11 +187,8 @@ label {
 }
 .plan-list {
   max-width: 396px;
-  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
-
 .plan-item {
   font-weight: 700;
   font-size: 36px;
@@ -705,12 +698,17 @@ label {
 .modal-check:focus + .modal-check-text span {
   border-color: var(--color4);
 }
+.privacy-div {
+  display: flex;
+  flex-wrap: wrap;
+}
 .modal-check-text {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #757575;
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   margin-bottom: 24px;
 }
@@ -768,7 +766,7 @@ label {
   height: 100%;
   position: fixed;
   top: 0;
-  padding: 80px 0 40px 40px;
+  padding: 80px 20px 40px 40px;
   scroll-behavior: auto;
   display: flex;
   flex-direction: column;
@@ -819,7 +817,6 @@ label {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color1);
-  margin-bottom: 40px;
   display: block;
 }
 .menu-mail-item {
@@ -829,8 +826,10 @@ label {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color3);
-  margin-bottom: 48px;
   display: block;
+}
+.menu-contact-item-list {
+  margin-bottom: 40px;
 }
 .menu-soc-div {
   max-width: 328px;
@@ -866,6 +865,10 @@ label {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+  .container-tab {
+    max-width: 582px;
+    margin: 0 auto;
   }
   .menu-div {
     width: min-content;
@@ -927,6 +930,10 @@ label {
   .contact-item:focus {
     color: var(--color4);
   }
+  .studio,
+  .portfolio {
+    color: var(--color4);
+  }
   .title {
     background-image: var(--gradient-color), url(../images/hero-tab-1x-min.jpg);
   }
@@ -949,6 +956,9 @@ label {
   .plan-list-section {
     flex-direction: row;
     gap: 72px 24px;
+  }
+  .plan-item {
+    text-align: start;
   }
   .plan-list {
     max-width: 356px;
@@ -974,7 +984,6 @@ label {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
-    margin-left: 93px;
   }
   .footer-logo-div {
     margin-bottom: 72px;
@@ -1067,6 +1076,7 @@ label {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    margin-top: 8px;
   }
   .plan-text {
     font-weight: 400;
@@ -1108,5 +1118,10 @@ label {
   .photo {
     width: 360px;
     height: 300px;
+  }
+}
+@media screen and (max-width: 392px) {
+  .modal {
+    width: 100%;
   }
 }
